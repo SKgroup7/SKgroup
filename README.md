@@ -5,7 +5,7 @@
 (例↓)
 ```python
 # index.htmlの表示
-@app.route("/")	# 岡郁也
+@app.route("/")	
 def index():
 	return render_template("index.html")
 ```
