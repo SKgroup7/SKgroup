@@ -1,1 +1,35 @@
-助けてくださいaabbcc
+<JS34>
+ React環境構築
+   ・前提：Node.jsが入ってること
+       →Nodeが入ってるか確認
+         →コマンドプロンプト
+           node -v
+           
+           開発用フォルダの作成
+             c:\React-apps
+             
+           学内で実行する時は、
+           proxy設定があるか確認
+             npm config list
+             
+           ※proxy設定なしの場合
+             npm config set proxy "http://proxy01.nagoya.hal.ac.jp:8080/"
+             npm config set https-proxy "http://proxy01.nagoya.hal.ac.jp:8080/"
+
+   1)コマンドプロンプト(ターミナル)の
+     作業ディレクトリの移動
+       cd c:\React-apps
+     
+   2)ツール「Create React App」を元にしてプロジェクトを作る。
+       npx create-react-app react-r01
+
+   3)プロジェクトフォルダ内に移動
+       cd react-r01
+       
+   4)Reactの実行
+       npm start
+
+   ※npx create-react-app react-r01
+     で実行した時に、
+     「mkdir react-r01」でエラー発生する場合
+     →コマンドプロンプトを管理者権限で実行
